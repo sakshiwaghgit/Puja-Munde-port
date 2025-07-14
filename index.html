@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Puja Mundhe | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div class="profile">
+      <img src="assets/puja.jpg" alt="Puja Mundhe">
+      <h1>Puja Mundhe</h1>
+      <p>Final year Computer Engineering student</p>
+      <div class="links">
+        <a href="mailto:pujamundhe.nbnssoe.comp@gmail.com">Email</a>
+        <a href="https://github.com/Pujamundhe" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/puja-mundhe-a77828273" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('skills')">Skills</button>
+      <button onclick="showSection('project')">Project</button>
+      <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <div id="about" class="section content-section">
+      <h2>About</h2>
+      <p>I am a final year computer engineering student at NBNSTIC, Pune, with strong expertise in web development, Java, and modern frameworks. I build solutions that are impactful, scalable, and user-friendly.</p>
+    </div>
+
+    <div id="skills" class="section content-section" style="display:none;">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>ReactJS</li>
+        <li>NodeJS</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+
+    <div id="project" class="section content-section" style="display:none;">
+      <h2>Project</h2>
+      <h3>Bank Management System</h3>
+      <p>
+        <strong>Frontend:</strong> Java Swing & AWT for GUI<br>
+        <strong>Backend:</strong> MySQL via Workbench, JDBC for DB connection<br>
+        <strong>IDE:</strong> IntelliJ IDEA
+      </p>
+    </div>
+
+    <div id="contact" class="section content-section" style="display:none;">
+      <h2>Contact</h2>
+      <p>Email: pujamundhe.nbnssoe.comp@gmail.com</p>
+      <p>Phone: 7559392927</p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
